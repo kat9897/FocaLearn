@@ -46,7 +46,7 @@ const setCurrentReminders = () => {
   chrome.storage.local.get({"reminders": []}, (data) => {
     for (const reminder of data.reminders) {
       let currentReminder = document.createElement("li")
-      currentReminder.innerHTML = reminder.reminderName + " " + "Due date: " + reminder.date
+      currentReminder.innerHTML = reminder.reminderName + " is due " + reminder.date
       currentReminders.appendChild(currentReminder)
     }
   })

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <link rel="stylesheet" href="appointment.css" />
     <link rel="stylesheet" href="task.css" />
+    <link rel="stylesheet" href="styles.css">
     <title>FocaLearn</title>
     <link
       rel="stylesheet"
@@ -44,6 +45,7 @@
     </style>
   </head>
   <body>
+    <h1>FocaLearn</h1>
     <div class="music">
       <audio id="softMusic" src="song/music.mp3" loop=""></audio>
       <button class="btn">
@@ -65,7 +67,7 @@
         });
       });
     </script>
-    <div>
+    <div id="reminder-div">
       <span>Set an assignment date to be reminded 1 day before:</span>
       <form id="reminder">
         <label for="set-reminder-name">Assignment name:</label>
@@ -75,7 +77,7 @@
         <button type="submit" name="submit">Set reminder</button>
       </form>
       <button id="clear-reminders">Clear reminders</button>
-      <div>
+      <div id="current-reminders-div">
         <span>Current reminders:</span>
         <ul id="current-reminders"></ul>
       </div>
