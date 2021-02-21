@@ -4,14 +4,29 @@
     <!-- <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <link rel="stylesheet" href="button.css" />
     <link rel="stylesheet" href="appointment.css" />
     <link rel="stylesheet" href="task.css" />
     <title>FocaLearn</title>
-    <script src="popup.js"></script>
   </head>
   <body>
     <a href="musicPlayer.html" id="music-player">Play music</a>
+    <div>
+      <span>Set an assignment date to be reminded 1 day before:</span>
+      <form id="reminder">
+        <label for="set-reminder-name">Assignment name:</label>
+        <input name="set-reminder-name" value="" id="reminder-name" required>
+        <label for="set-date">Assignment due date:</label>
+        <input name="set-date" type="date" id="reminder-date" required>
+        <button type="submit" name="submit">Set reminder</button>
+      </form>
+      <button id="clear-reminders">Clear reminders</button>
+      <div>
+        <span>Current reminders:</span>
+        <ul id="current-reminders">
+
+        </ul>
+      </div>
+    </div>
     <a
       href="https://studentlife.utoronto.ca/task/book-appointments-and-view-lab-results-online/"
       target="_blank"
@@ -19,5 +34,6 @@
       >Book an appointment</a
     >
     <textarea id="notes" placeholder="Write your tasks here..."></textarea>
+    <script src="popup.js"></script>
   </body>
 </html>
