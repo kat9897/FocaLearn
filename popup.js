@@ -22,15 +22,3 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
 }
-
-// Open link in new tab
-// const openLinkInNewTab = (event) => {
-//   event.preventDefault()
-//   chrome.tabs.create({url: event.target.href, active: false});
-//   return false
-// }
-
-// Open all links with target=_blank in new tab
-// document.querySelector('a[target="_blank"]').addEventListener('click', (event) => {
-//   openLinkInNewTab(event)
-// })
