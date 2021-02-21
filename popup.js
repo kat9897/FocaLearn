@@ -102,3 +102,23 @@ window.onload = () => {
   showReminders()
   setCurrentReminders()
 }
+
+function Start(song) {
+  song.play();
+  }
+  
+  function Pause(song) {
+  song.pause();
+  }
+  
+  document.addEventListener('DOMContentLoaded', function(){
+  var Play_Music = document.getElementById('play-circle');
+  var Pause_Music = document.getElementById('pause-circle');
+  
+  Play_Music.addEventListener('click', function() {
+      Start(softMusic);
+  });
+  Pause_Music.addEventListener('click', function() {
+      Pause(softMusic);
+  });
+  });
