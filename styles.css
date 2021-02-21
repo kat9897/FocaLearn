@@ -1,0 +1,18 @@
+#book-appointment {
+    display: inline-block;
+    padding: 7px;
+    border: 1px solid rgb(151, 151, 151);
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+#book-appointment:visited {
+    text-decoration: none;
+}
+
+#book-appointment:hover {
+    background: lightgrey;
+}
