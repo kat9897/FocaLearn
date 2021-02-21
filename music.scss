@@ -1,0 +1,28 @@
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.music {
+  position: absolute;
+  top: 3%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: transparent;
+  color: black;
+  font-size: 78px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.3;
+  transition: all linear 0.2s;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa-pause-circle-o {
+  display: none;
+}
